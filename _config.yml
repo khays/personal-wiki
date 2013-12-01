@@ -1,0 +1,7 @@
+name: geek.kellyhays.ca
+markdown: redcarpet
+pygments: true
+
+exclude_from_search: true
+lunr_search:
+  excludes: [rss.xml, atom.xml]
