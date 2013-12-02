@@ -79,7 +79,7 @@ module Jekyll
         name, weight = tag
         size = size_min + ((size_max - size_min) * weight).to_f
         size = sprintf("%.#{@precision}f", size)
-        html << "<a class='tag-cloud-items' style='font-size: #{size}#{unit}' href='/tags.html##{name}'>#{name}</a>\n"
+        html << "<a class='tag-cloud-items' style='font-size: #{size}#{unit}' href='/tag/#{name}/'>#{name}</a>\n"
       end
     end
 

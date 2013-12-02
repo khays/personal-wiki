@@ -13,12 +13,16 @@ layout: default
 
 	</div>
 	<div class="meta golden-small unit"> 
-		<h4 class="date">Posted on {{ page.date | date: "%B %d, %Y" }}</h4>
-		<h4>Tagged with</h4>
-		<ul class="tags">
-			{% for tag in page.tags %}
-			<li><a href="/tag/{{ tag }}/">{{ tag }}</a></li>
-			{% endfor %}
-		</ul>
+    <div class="grid clearfix">
+      <h4 class="date unit one-third top">Posted</h4><div class="date two-thirds unit">{{ page.date | date: "%B %d, %Y" }}</div>
+     </div>
+    <div class="grid">
+      <h4 class="unit one-third top">Tagged</h4>
+      <ul class="tags unit two-thirds">
+        {% for tag in page.tags %}
+        <li><a href="/tag/{{ tag }}/">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+     </div>
 	</div>
 </article>
